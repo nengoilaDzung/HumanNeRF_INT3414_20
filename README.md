@@ -29,25 +29,25 @@
     Chỉnh sửa địa chỉ thư mục ở phần zju_mocap_path của dataset 387 (ví dụ chính) trong file yaml tại tools/prepare_zju_mocap/387.yaml:<br />
     dataset:<br />
         ```
-        zju_mocap_path: /path/to/zju_mocap<br />
-        subject: '387'<br />
-        sex: 'neutral'<br />
+        zju_mocap_path: /path/to/zju_mocap
+        subject: '387'
+        sex: 'neutral'
         ```
 	Chạy đoạn mã sau :<br />
         ```
-        cd tools/prepare_zju_mocap<br />
-        python prepare_dataset.py --cfg 387.yaml <br />
+        cd tools/prepare_zju_mocap
+        python prepare_dataset.py --cfg 387.yaml 
         ```
 	Khi đó các frame chụp bởi các camera khác nhau sẽ được tổng hợp lại vào folder output để thuận tiện cho việc xử lý các khung hình.<br />
     Render output:<br />
         Render movement:<br />
             ```
-            python run.py --type movement --cfg configs/human_nerf/zju_mocap/387/adventure.yaml<br />
+            python run.py --type movement --cfg configs/human_nerf/zju_mocap/387/adventure.yaml
             ```
         Render freeview:<br />
             ```
-            python run.py --type freeview --cfg configs/human_nerf/zju_mocap/387/adventure.yaml<br />
-            freeview.frame_idx 128<br />
+            python run.py --type freeview --cfg configs/human_nerf/zju_mocap/387/adventure.yaml
+            freeview.frame_idx 128
             ```
         Render T-pose:<br />
             ```
