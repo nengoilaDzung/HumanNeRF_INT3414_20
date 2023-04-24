@@ -1,5 +1,5 @@
 dataset:
-  zju_mocap_path: 'path\to\zju_mocap'
+  zju_mocap_path: 'D:\PJ_Folder\HumanNerf\humannerf-main\'
   subject: '387'
   sex: 'neutral'
 

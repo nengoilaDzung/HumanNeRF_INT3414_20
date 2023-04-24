@@ -53,3 +53,4 @@
             ```
             python run.py --type tpose --cfg configs/human_nerf/zju_mocap/387/adventure.yaml<br />
             ```
+    
